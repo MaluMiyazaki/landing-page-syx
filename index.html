@@ -18,15 +18,27 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .bg-gradient-dark { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%); }
-        .glass-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); }
+        
+        /* Ajuste do fundo da seção principal */
+        .hero-section {
+            background: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), 
+                        url('public/img/background.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
         .accent-border { border-left: 4px solid #ce0e2d; }
     </style>
 
-        <link rel="icon" href="/public/logos/favicon.ico">
-        <link rel="icon" type="image/png" sizes="32x32" href="/public/logos/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/public/logos/favicon-16x16.png">
+    <link rel="icon" href="/public/logos/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/logos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/logos/favicon-16x16.png">
 
 </head>
 <body class="bg-[#f9fafb] text-[#111827]">
@@ -50,7 +62,7 @@
         </div>
     </nav>
 
-    <section class="pt-40 pb-24 bg-gradient-dark text-[#ffffff] relative overflow-hidden">
+    <section class="pt-40 pb-24 hero-section text-[#ffffff] relative overflow-hidden">
         <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
             <svg viewBox="0 0 100 100" class="w-full h-full text-[#ffffff] fill-current">
                 <path d="M0 0 L100 0 L100 100 Z" />
@@ -59,12 +71,12 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <span class="inline-block py-1 px-4 rounded-full text-[#ef4444] text-xs font-bold tracking-[0.3em] uppercase mb-6 border border-[#ce0e2d]/30">Building a Fully Connected, Intelligent World</span>
             <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight tracking-tight">Liberando o poder dos dados para a <span class="text-[#ce0e2d] italic">Era da Inteligência</span></h1>
-            <p class="text-xl text-[#9ca3af] max-w-3xl mx-auto mb-12 leading-relaxed">Não entregamos apenas hardware. Criamos arquiteturas de próxima década onde a IA é o fundamento, não uma camada adicional.</p>
+            <p class="text-xl text-[#d1d5db] max-w-3xl mx-auto mb-12 leading-relaxed">Não entregamos apenas hardware. Criamos arquiteturas de próxima década onde a IA é o fundamento, não uma camada adicional.</p>
             <div class="flex flex-col md:flex-row justify-center gap-5">
                 <a href="#contato" class="bg-[#ce0e2d] hover:bg-[#b91c1c] text-[#ffffff] px-10 py-5 rounded-xl font-bold transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3 shadow-xl shadow-[#ce0e2d]/30">
                     Agendar Workshop Técnico <i data-lucide="arrow-right" class="w-5 h-5"></i>
                 </a>
-                <a href="#cases" class="bg-[#ffffff]/5 hover:bg-[#ffffff]/10 border border-[#ffffff]/20 text-[#ffffff] px-10 py-5 rounded-xl font-bold transition-all">
+                <a href="#cases" class="bg-[#ffffff]/10 hover:bg-[#ffffff]/20 border border-[#ffffff]/20 text-[#ffffff] px-10 py-5 rounded-xl font-bold transition-all">
                     Explorar Cases de Sucesso
                 </a>
             </div>
