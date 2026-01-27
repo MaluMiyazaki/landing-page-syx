@@ -19,13 +19,19 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
         
-        /* Ajuste do fundo da seção principal */
         .hero-section {
-            background: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), 
+            background: linear-gradient(rgba(17, 24, 39, 0.85), rgba(17, 24, 39, 0.85)), 
                         url('public/img/background.png');
             background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+
+        @media (min-width: 768px) {
+            .hero-section {
+                background-attachment: fixed;
+            }
         }
 
         .glass-card {
@@ -33,13 +39,13 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
         }
+        
         .accent-border { border-left: 4px solid #ce0e2d; }
     </style>
 
     <link rel="icon" href="/public/logos/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/public/logos/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/public/logos/favicon-16x16.png">
-
 </head>
 <body class="bg-[#f9fafb] text-[#111827]">
 
@@ -47,9 +53,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                 <div class="flex items-center gap-2">
-                    <img src="public/logos/Logo SYX Vermelha.png" 
-                    alt="Logo SYX-AI"
-                    class="h-14 w-auto"/>
+                    <img src="public/logos/Logo SYX Vermelha.png" alt="Logo SYX-AI" class="h-14 w-auto"/>
                 </div>
                 <div class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-widest text-[#4b5563]">
                     <a href="#solucoes" class="hover:text-[#ce0e2d] transition">Soluções</a>
@@ -298,11 +302,7 @@
     <footer class="py-12 bg-[#ffffff] border-t border-[#f3f4f6]">
         <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
             <div class="text-center md:text-left">
-                <img 
-                src="public/logos/Logo SYX Vermelha.png" 
-                alt="SYX-AI Footer Logo"
-                class="h-14 w-auto"
-                />
+                <img src="public/logos/Logo SYX Vermelha.png" alt="SYX-AI Footer Logo" class="h-14 w-auto"/>
                 <p class="text-xs text-[#9ca3af] font-bold uppercase tracking-widest">Powered by Huawei Strategy</p>
             </div>
             <div class="text-sm text-[#6b7280] font-medium">
